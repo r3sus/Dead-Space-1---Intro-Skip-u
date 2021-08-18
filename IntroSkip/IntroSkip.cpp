@@ -18,7 +18,7 @@ BOOL WINAPI DllMain(HINSTANCE hInst, DWORD reason, LPVOID)
 		wcscpy_s(exeName, lenght, baseModuleName + indexOfLastPathNode);
 		StrToLower(exeName);
 
-		std::wregex pattern(L"Dead Space?(.+)\\.exe");
+		std::wregex pattern(L"dead space?(.+)\\.exe");
 		if (std::regex_search(exeName, pattern))
 		{
 			MODULEINFO info;
