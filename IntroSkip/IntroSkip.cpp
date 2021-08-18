@@ -18,14 +18,14 @@ BOOL WINAPI DllMain(HINSTANCE hInst, DWORD reason, LPVOID)
 		wcscpy_s(exeName, lenght, baseModuleName + indexOfLastPathNode);
 		StrToLower(exeName);
 
-		std::wregex pattern(L"deadspace2?(.+)\\.exe");
+		std::wregex pattern(L"Dead Space?(.+)\\.exe");
 		if (std::regex_search(exeName, pattern))
 		{
 			MODULEINFO info;
 			GetModuleInformation(GetCurrentProcess(), baseModule, &info, sizeof(info));
 
-			const char* LookForStr = "XCENTKOWSK_C9C50BC_08B592A_v3";
-			const char* ReplaceStr = "XPATEL1026_CB19946_663E415_v3";
+			const char* LookForStr = "XCENTKOWSK_C8A99CD_622DBBB_v3";
+			const char* ReplaceStr = "XCENTKOWSK_C78C369_F71988A_v3";
 			auto lenghtOfStr = strlen(LookForStr);
 			
 			for (unsigned int i = 0; i < info.SizeOfImage-lenghtOfStr; i++)
