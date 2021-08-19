@@ -7,11 +7,13 @@ Usage: Download project and extract contents of `Release` in game folder.
 
 # Technical details
 
-ds2 version changed for ds1, since it's more universal. Should work for Origin now, as well for any other. 
+It is mainly SuiMachine's work with minor modifications. 
+
+Current ds1 no intro dll uses static address for patching, which seems not working for Origin (altho I've tested it). The version for ds2 is more flexible and does replacement anywhere the target is. So this is version of ds2 modified for ds1. Hopefully this dll will work with Origin version, as well for any other. Compatible with mouse fix by default (changed name to version.dll).
 
 Altho the code was changed, the previous Release is used with manually patched `IntroSkip.asi` for ds1.
 
-Changed name to `version.dll`, so compaitable with mouse fix by default. For other applicable names see: [link](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files#Win32_API), most would work.
+For other applicable dll names see: [link](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files#Win32_API), most would work.
 
 # Credits
 * SuicideMachine (programming)
