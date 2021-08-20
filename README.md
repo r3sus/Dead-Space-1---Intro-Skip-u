@@ -3,13 +3,13 @@ A simple hack to skip an intro in Dead Space 1.
 
 Usage: Download project and extract contents of `Release` in game folder. 
 
-[Direct link](https://github.com/r3sus/Dead-Space-1---Intro-Skip-u/archive/refs/heads/main.zip)
+[Direct link](../../archive/refs/heads/main.zip)
 
 # Technical details
 
 It is mainly SuiMachine's work with minor modifications. 
 
-Current ds1 no intro dll uses static address for patching, which seems not working for Origin (altho I've tested it). The version for ds2 is more flexible and does replacement anywhere the target is. So this is version of ds2 modified for ds1. Hopefully this dll will work with Origin version, as well for any other. Compatible with mouse fix by default (changed name to version.dll).
+Current ds1 no intro dll uses static address for patching, which seems not working for Origin (altho I've tested it). The version for ds2 is more flexible and does replacement anywhere the target is. So it was taken as base and modified for ds1. Hopefully this dll will work with Origin version, as well for any other. Compatible with mouse fix by default (changed name to version.dll).
 
 Altho the code was changed, the previous Release is used with manually patched `IntroSkip.asi` for ds1.
 
